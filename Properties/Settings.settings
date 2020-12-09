@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PlansParser.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PathToFineCmd" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files (x86)\ABBYY FineReader 12\FineCmd.exe</Value>
+    </Setting>
+    <Setting Name="GovAskaUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://askebsa.dol.gov/FOIA%20Files/{0}/All/</Value>
+    </Setting>
+    <Setting Name="AJAXFCTLogin" Type="System.String" Scope="User">
+      <Value Profile="(Default)">vvk@inbox.com</Value>
+    </Setting>
+    <Setting Name="AJAXFCTPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">000b59c67bf196a4758191e42f76670ceba000</Value>
+    </Setting>
+    <Setting Name="DownloadGovPlansPdfThreadCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="FineCmdThreadCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="TorBrowserPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">F:\Tor Browser\firefox.exe</Value>
+    </Setting>
+    <Setting Name="ScraperFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DownloadPdfUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://12.158.148.210/portal/app/disseminate?execution=e13s2</Value>
+    </Setting>
+    <Setting Name="XlsToCsvConverThreadCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="DownloadPdfMaxRetryCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="NeedTorBrowser" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BaseDirFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">F:\Rextema\Plans 03.01.2017\</Value>
+    </Setting>
+    <Setting Name="WordToReplace" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{"" : ["ii", "portfolio", "administrative", "Annuity", "fund", "class", "the", "inc"] }</Value>
+    </Setting>
+    <Setting Name="AJAXFCTUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://rixtrema.net/RixtremaWS401k/</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
