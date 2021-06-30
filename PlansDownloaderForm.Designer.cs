@@ -31,6 +31,7 @@
             this.Logic = new System.Windows.Forms.TabPage();
             this.txtLog = new System.Windows.Forms.TextBox();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -65,7 +66,9 @@
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.DownloadLoansButton = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.Logic.SuspendLayout();
             this.MainPanel.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -99,6 +102,9 @@
             // MainPanel
             // 
             this.MainPanel.BackColor = System.Drawing.SystemColors.Control;
+            this.MainPanel.Controls.Add(this.label3);
+            this.MainPanel.Controls.Add(this.label2);
+            this.MainPanel.Controls.Add(this.textBox3);
             this.MainPanel.Controls.Add(this.button7);
             this.MainPanel.Controls.Add(this.textBox1);
             this.MainPanel.Controls.Add(this.button6);
@@ -126,6 +132,16 @@
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(1993, 834);
             this.MainPanel.TabIndex = 1;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(621, 424);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(220, 61);
+            this.button7.TabIndex = 81;
+            this.button7.Text = "Clear Empty file (after patterns)";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // textBox1
             // 
@@ -473,15 +489,31 @@
             this.DownloadLoansButton.UseVisualStyleBackColor = true;
             this.DownloadLoansButton.Click += new System.EventHandler(this.DownloadLoansButton_Click);
             // 
-            // button7
+            // textBox3
             // 
-            this.button7.Location = new System.Drawing.Point(621, 424);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(220, 61);
-            this.button7.TabIndex = 81;
-            this.button7.Text = "Clear Empty file (after patterns)";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.textBox3.Location = new System.Drawing.Point(138, 222);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 26);
+            this.textBox3.TabIndex = 82;
+            this.textBox3.Text = "1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(244, 196);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(188, 20);
+            this.label2.TabIndex = 83;
+            this.label2.Text = "Time between downloads";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(244, 228);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 20);
+            this.label3.TabIndex = 84;
+            this.label3.Text = "Processes";
             // 
             // PlansDownloaderForm
             // 
@@ -546,6 +578,9 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
 

@@ -427,11 +427,12 @@ namespace PlansParser
             int cnt = 1;
 
             int delay = Convert.ToInt32(textBox1.Text);
+            int processes = Convert.ToInt32(textBox3.Text);
 
             //foreach (var item in rows)
             Task task = Task.Factory.StartNew(delegate
             {
-                Parallel.ForEach(rows, new ParallelOptions { MaxDegreeOfParallelism = 4 }, item => // VVK MaxDegreeOfParallelism=4
+                Parallel.ForEach(rows, new ParallelOptions { MaxDegreeOfParallelism = processes }, item => // VVK MaxDegreeOfParallelism=4
                 {
                     using (var webClient = new WebClient())
                     {
